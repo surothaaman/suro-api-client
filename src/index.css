@@ -1,0 +1,14 @@
+:root {
+  font-family: Arial, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
