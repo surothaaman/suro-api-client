@@ -165,15 +165,16 @@ with db.run to access this.lastID and this.changes.
 Both implementations use raw SQL, parameterized values, database
 constraints, and local SQLite files.
 
-## Scope and Limitations
+## Frontend Integration
 
-This is a local learning project.
+CORS allows http://localhost:5173 and http://127.0.0.1:5173.
 
-- Authentication and roles are not implemented.
-- CORS and frontend integration are follow-up tasks.
-- POST and PATCH perform a write followed by a separate read, so a
-  concurrent request can change the record before that read completes.
-- No automated test suite is included.
+Manually tested the React client with both backends:
+- Create and list users.
+- Edit users and confirm changes after refreshing.
+- Delete users and confirm removal.
+
+Both backend flows completed without browser errors.
 
 ## Version Control
 
